@@ -1,3 +1,6 @@
+# The Panoptic Head
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/8600096/158238778-94769532-6563-4641-b058-7fae652bb11c.png">
+
 ## 1. Where does the encoded image come from ?
 Lets say the size of our input image is `3 X H X W`, where 3 is the RGB channel, H the height, and W the width. 
 
