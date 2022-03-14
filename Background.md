@@ -12,3 +12,9 @@ The next stage is to pass the featrues of `H/32 X W/32 X C` to an Encoder. First
 
 
 ## 2. Where is the d X N box embedding coming from ?
+
+## 3. How are the Attention maps generated ?
+
+## 4. Where is the Resnet features coming from, in the FPN-style CNN network ?
+
+## 5. The overall steps in training a Panoptic instance segmenetation using DETR. 
