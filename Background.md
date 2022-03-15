@@ -13,12 +13,14 @@ The next stage is to pass the featrues of `H/32 X W/32 X C` to an Encoder. First
 
 ## 2. Where is the d X N box embedding coming from ?
 Once the encoded image is available it is passed through the decoder. The decoder is trained first to detect objects (bbox and corresponding class). In the DETR architecture we can have a set number of objects. This is the number of inputs to the decoder, they are called the object queries. For each object query the decoder outputs if there is an object or not, and when there is an object the output will have the class and bbox. This is done parallely for all the object queries. 
+
 <img width="282" alt="image" src="https://user-images.githubusercontent.com/8600096/158289934-3dfb36e0-6778-46c6-bd04-df0d3e9880c0.png">
 
 In panoptic segmentation task the object embeddings that has a class is set aside. The dimension of these object embeddings is `d X N`. Here N is number of the objects. 
 
 ## 3. How are the Attention maps generated ?
 The multihead attention layer is used to generate the attention scores for the encoded image corresponding to each object embeddings.  
+
 
 ## 4. Where is the Resnet features coming from, in the FPN-style CNN network ?
 In the First step when the image is passed through the CNN backbone, some of the select intermediate layers of actiavtion of the models is stored, namely Res2, Res3, Res4, and Res5. 
